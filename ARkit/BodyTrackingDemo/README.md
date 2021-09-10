@@ -1,7 +1,10 @@
-# BodyTrackingDemo
 ## 概要
-- このアプリケーションは、iOSアプリ[『ZIG SIM PRO』](https://apps.apple.com/us/app/zig-sim-pro/id1481556614)のARkit機能のTracking TypeがBODYの時に使用できます。
-- 『ZIG SIM PRO』で取得した人体（１名のみ）の90箇所の関節位置とiOSデバイスの現在位置をUDPで受信し、ブラウザ上に表示します。間接位置は緑色、iOSデバイス位置は赤色です。
+- このアプリケーションは、iOSアプリ[『ZIG SIM PRO』](https://apps.apple.com/us/app/zig-sim-pro/id1481556614)と連携して使用します。
+- 『ZIG SIM PRO』で取得した人体（１名のみ）の90箇所の関節位置とiOSデバイスの現在位置をUDPで受信し、ブラウザ上に表示します。間接位置は緑色の点、iOSデバイスの現在位置は赤色の点です。
+
+<img src="https://github.com/1-10/zigsim-receivers/blob/main/art/zigsim_body_demo.gif" width="600">
+
+<img src="https://github.com/1-10/zigsim-receivers/blob/main/art/body_composition.png" width="600">
 
 ## 準備
 このリポジトリをクローンして実行できるようにしてください。
@@ -23,7 +26,7 @@ $ npm i
 
 1. BodyTrackingDemoディレクトリ内のindex.htmlをブラウザで開く。
 
-### 『ZIG SIM PRO』から人体とデバイスの位置情報を送信
+### 『ZIG SIM PRO』で人体の関節位置情報、デバイスの位置情報を送信
 
 1. 本アプリケーションが起動しているPCのローカルIPアドレスを取得する。
 1. 『ZIG SIM PRO』のSetting画面で各設定値を以下のように変更する。
