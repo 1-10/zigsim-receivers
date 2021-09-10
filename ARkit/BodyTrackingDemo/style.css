@@ -1,0 +1,10 @@
+body {
+    margin: 0px; 
+    color: rgb(0,255,0);
+}
+
+#point-count {
+    margin: 20px;
+    font-size: 15px;
+    position: absolute
+}
