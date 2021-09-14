@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="style.css" rel="Stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="assets/quizzes.js"></script>
+        <script src="assets/settings.js"></script>
+        <script src="components/question.js"></script>
+        <script src="components/choices.js"></script>
+        <script src="components/timer.js"></script>
+        <script src="components/result.js"></script>
+        <title>体を使ったクイズゲーム</title>
+    </head>
+    <body>
+        <div id="app">
+            <button class="top-button" @click="startGame" v-if="!isGaming">クイズ開始！</button>
+            <timer v-if="isGaming" :timelimit="timeLimit"></timer>
+            <question v-if="isGaming" :question="quizzes[questionNumber].question"></question>
+            <choices v-if="isGaming"
+                :choice1="quizzes[questionNumber].choices[0]"
+                :choice2="quizzes[questionNumber].choices[1]" 
+                :choice3="quizzes[questionNumber].choices[2]" 
+                :choice4="quizzes[questionNumber].choices[3]"
+                :color1="choiceColor1"
+                :color2="choiceColor2"
+                :color3="choiceColor3"
+                :color4="choiceColor4"></choices>
+            <result v-if="isGaming && judgmentResult != '-'" :result="judgmentResult"></result>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
