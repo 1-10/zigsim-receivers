@@ -2,19 +2,19 @@
 zigsim-receiversは、『ZIG SIM』アプリの受信側アプリケーションのサンプル集です。
 
 ## ZIG SIMとは
-ZIG SIMは『フィジカル・プロトタイピングをプロトタイピングする』ためのアプリケーションです。従来、センサを利用したプロトタイピングを行う場合、電子工作、マイコンプログラミング、通信仕様策定、アプリケーションプログラミング等の作業が必要でしたが、『ZIG SIM』を使用すれば、受信側アプリケーションの作成のみでのプロトタイピングが制作可能となります。<br>
-現在は以下のスマートフォンアプリがリリースされています。
-- ZIG SIM（iOS、Android）
+ZIG SIMは『フィジカル・プロトタイピングをプロトタイピングする』ためのアプリケーションです。従来、センサを利用したプロトタイピングを行う場合、電子工作、マイコンプログラミング、通信仕様策定、アプリケーションプログラミング等の作業が必要でしたが、ZIG SIMを使用すれば、受信側アプリケーションの作成のみでのプロトタイピングが制作可能となります。<br>
+現在は以下のスマートフォンアプリがリリースされています。[詳しくはこちら](https://zig-project.com/)
 
-- ZIG SIM PRO（iOS）
-
-[詳しくはこちら](https://zig-project.com/)
+|<a href='https://apps.apple.com/jp/app/zig-sim/id1112909974'><img src="https://github.com/1-10/zigsim-receivers/blob/main/art/appstore/app_store_badge_blk.svg" width="140" /></a>|<a href='https://play.google.com/store/apps/details?id=com.oneten.drive.zig_sim&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png' width="180"/></a>|<a href='https://apps.apple.com/jp/app/zig-sim-pro/id1481556614'><img src="https://github.com/1-10/zigsim-receivers/blob/main/art/appstore/app_store_badge_wht.svg" width="140"></a>|
+|:---:|:---:|:---:|
+|ZIG SIM（iOS）|ZIG SIM（Android）|ZIG SIM PRO（iOS）|
 
 ## このサンプル集の目的
+ZIG SIMはアイデア次第で様々な用途で活用できる便利なアプリです。<br/>このサンプル集では、ZIG SIM利用者のアイデアを膨らませる一助となるべく、各機能を使った簡易的なアプリケーションを随時追加して行く予定です。
 
-- [NDI](https://github.com/1-10/zigsim-receivers/tree/main/NDI)
-- [ARKit](https://github.com/1-10/zigsim-receivers/tree/main/ARkit)
-
+### サンプルリスト
+- [x] [NDI Human Demo](https://github.com/1-10/zigsim-receivers/tree/main/NDI/HumanDemo)
+- [x] [ARKit BodyTracking Demo](https://github.com/1-10/zigsim-receivers/tree/main/ARkit/BodyTrackingDemo)
 
 ## License
 [MIT License](https://github.com/1-10/zigsim-receivers/blob/main/LICENSE.txt)
