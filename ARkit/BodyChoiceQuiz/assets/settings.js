@@ -1,5 +1,5 @@
 const settings = {
-    "width": 1.0,
+    "width": 2.0,
     "height": 2.0,
     "heightAdjustValue": 1.0,
     "widthAdjustValue": 0.0,
