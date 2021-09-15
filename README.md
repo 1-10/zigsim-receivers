@@ -22,6 +22,7 @@ ZIG SIMはアイデア次第で様々な用途で活用できる便利なアプ�
 ### サンプルリスト
 - [x] [NDI Human Demo](https://github.com/1-10/zigsim-receivers/tree/main/NDI/HumanDemo)
 - [x] [ARKit BodyTracking Demo](https://github.com/1-10/zigsim-receivers/tree/main/ARkit/BodyTrackingDemo)
+- [x] [ARkit Body Choice Quiz](https://github.com/1-10/zigsim-receivers/tree/main/ARkit/BodyChoiceQuiz)
 
 ## License
 [MIT License](https://github.com/1-10/zigsim-receivers/blob/main/LICENSE.txt)
