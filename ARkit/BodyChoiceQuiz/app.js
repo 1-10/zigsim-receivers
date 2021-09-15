@@ -61,23 +61,23 @@ var app = new Vue({
         },
         changePositionToSection() {
             let  currentSectionOfPlayer = -1
-            const xLength = settings.width
-            const zLength = settings.height
+            const xLength = settings.xWidth
+            const zLength = settings.zWidth
             const　boundary1 = {
-                "x": [0.0 + settings.widthAdjustValue, xLength / 2.0 + settings.widthAdjustValue], 
-                "z": [-1.0 * zLength / 2.0 - settings.heightAdjustValue, 0.0 - settings.heightAdjustValue]
+                "x": [0.0 + settings.xWidthAdjustValue, xLength / 2.0 + settings.xWidthAdjustValue], 
+                "z": [-1.0 * zLength / 2.0 - settings.zWidthAdjustValue, 0.0 - settings.zWidthAdjustValue]
                 }
             const　boundary2 = {
-                "x": [-1.0 * xLength / 2.0 + settings.widthAdjustValue, 0.0 + settings.widthAdjustValue],
-                "z": [-1.0 * zLength / 2.0 - settings.heightAdjustValue, 0.0 - settings.heightAdjustValue]
+                "x": [-1.0 * xLength / 2.0 + settings.xWidthAdjustValue, 0.0 + settings.xWidthAdjustValue],
+                "z": [-1.0 * zLength / 2.0 - settings.zWidthAdjustValue, 0.0 - settings.zWidthAdjustValue]
             }
             const　boundary3 = {
-                "x": [0.0 + settings.widthAdjustValue, xLength / 2.0 + settings.widthAdjustValue], 
-                "z": [-1.0 * zLength - settings.heightAdjustValue, -1.0 * zLength / 2.0 - settings.heightAdjustValue]
+                "x": [0.0 + settings.xWidthAdjustValue, xLength / 2.0 + settings.xWidthAdjustValue], 
+                "z": [-1.0 * zLength - settings.zWidthAdjustValue, -1.0 * zLength / 2.0 - settings.zWidthAdjustValue]
                 }
             const　boundary4 = {
-                "x": [-1.0 * xLength / 2.0 + settings.widthAdjustValue, 0.0 + settings.widthAdjustValue],
-                "z": [-1.0 * zLength - settings.heightAdjustValue, -1.0 * zLength / 2.0 - settings.heightAdjustValue]
+                "x": [-1.0 * xLength / 2.0 + settings.xWidthAdjustValue, 0.0 + settings.xWidthAdjustValue],
+                "z": [-1.0 * zLength - settings.zWidthAdjustValue, -1.0 * zLength / 2.0 - settings.zWidthAdjustValue]
             }
             if (boundary1.x[0] < this.playerPosition.x && this.playerPosition.x < boundary1.x[1]) {
                 if (boundary1.z[0] < this.playerPosition.z && this.playerPosition.z < boundary1.z[1]) {
