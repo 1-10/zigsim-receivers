@@ -3,7 +3,7 @@
 - このアプリケーションは、iOSアプリ[『ZIG SIM PRO』](https://apps.apple.com/us/app/zig-sim-pro/id1481556614)と連携して使用します。
 - 『ZIG SIM PRO』のARKitのBodyを使用します。
 
-<img src="https://github.com/1-10/zigsim-receivers/blob/main/art/body_choice_quize.gif" width="600">
+<img src="https://github.com/1-10/zigsim-receivers/blob/main/art/body_choice_quize.gif" width="700">
 
 ## 準備
 このリポジトリをクローンして実行できるようにしてください。
@@ -15,17 +15,18 @@ $ npm i
 ```
 
 ## 使用方法
-### 本アプリケーションの起動
+### アプリケーションの起動
 
-1. BodyTrackingDemoディレクトリ内で以下を実行する。
+1. BodyTrackingDemoディレクトリ内で以下を実行してサーバーを起動する。
 
     ```
     $ node main.js
     ```
 
 1. BodyChoiceQuizディレクトリに移動し、index.htmlをブラウザで開く。
+    - CDNを使用しているのでインターネットに繋がった状態で開いてください。
 
-### 『ZIG SIM PRO』で人体の関節位置情報、デバイスの位置情報を送信
+### 『ZIG SIM PRO』で人体の関節位置情報を送信
 
 1. 本アプリケーションが起動しているPCのローカルIPアドレスを取得する。
 1. 『ZIG SIM PRO』のSetting画面で各設定値を以下のように変更する。
@@ -40,14 +41,15 @@ $ npm i
 1. 『ZIG SIM PRO』のSensor画面でARKitを選択する。
 1. 以下を参考にして、『ZIG SIM PRO』のStartボタンをタップする。
     - ARkit機能を起動した時の位置・方向を元にAR座標系の原点が決まります。
+    
     <img src="https://docs-assets.developer.apple.com/published/07f7a569d7/9e32bddd-d69b-41f5-9aba-55183f358ff4.png" width="300">
     
 1. 以下のような状態になるようiOS端末を配置する。
-
+    
     <img src="https://github.com/1-10/zigsim-receivers/blob/main/art/body_choice_quiz_system.png" width="500">
 
-### 設定値
-#### 位置関係
+## 設定値
+### 位置関係
 - [settings.js](https://github.com/1-10/zigsim-receivers/blob/main/ARkit/BodyChoiceQuiz/assets/settings.js)で位置関係を調整できます。
     - xWidth: x軸方向の領域の長さ[m]
     - zWidth: z軸方向の領域の長さ[m]
@@ -56,7 +58,7 @@ $ npm i
 
     <img src="https://github.com/1-10/zigsim-receivers/blob/main/art/body_choice_quiz_system_outline.png" width="500">
     
-#### クイズの内容
+### クイズの内容
 - [quizzes.js](https://github.com/1-10/zigsim-receivers/blob/main/ARkit/BodyChoiceQuiz/assets/quizzes.js)
     - question: 問題
     - choices: 4つの選択肢
